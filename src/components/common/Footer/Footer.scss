@@ -1,0 +1,119 @@
+.footer {
+    padding-top: 80px;
+    position: relative;
+
+    &__content {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    @media (min-width: 901px) {
+        &__container {
+            width: 881px;
+        }
+    }
+
+    @media (min-width: 1201px) {
+        &__container {
+            width: 1181px;
+        }
+    }
+
+    &__container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__container::before,
+    &__container::after,
+    &__row::before,
+    &__row::after {
+        content: " ";
+        display: table;
+        box-sizing: border-box;
+    }
+
+    &__row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    &__col {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px -10px;
+
+        a {
+            color: rgba(0, 0, 0, 0.7);
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 10px;
+            -webkit-font-smoothing: antialiased;
+            margin: 0px 10px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            background-color: transparent;
+        }
+    }
+
+    &__mid {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px -10px;
+
+        a {
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        img {
+            color: rgba(0, 0, 0, 0.7);
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 10px;
+            -webkit-font-smoothing: antialiased;
+            margin: 0px 10px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+            filter: grayscale(100%) opacity(70%) brightness(60%);
+            vertical-align: middle;
+            border: 0;
+        }
+    }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px -10px;
+    }
+
+    &__text {
+        color: rgba(0, 0, 0, 0.7);
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 10px;
+        -webkit-font-smoothing: antialiased;
+        margin: 0px 10px;
+        letter-spacing: 1px;
+    }
+}
